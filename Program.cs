@@ -30,5 +30,6 @@ app.Run();
 
 
 var produit1 = new Produit{ Nom = "pates", Prix = 10.99m };
-
+var client1 = new Client{ Nom = "John Doe", email = "john.doe@example.com" };
 produit1.Afficher();
+client1.Afficher();
