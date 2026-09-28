@@ -1,3 +1,5 @@
+using static Interface.Controllers.HomeController;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -33,3 +35,6 @@ var produit1 = new Produit{ Nom = "pates", Prix = 10.99m };
 var client1 = new Client{ Nom = "John Doe", email = "john.doe@example.com" };
 produit1.Afficher();
 client1.Afficher();
+
+IAffichable element = new Client { Nom = "Jane Smith", email = "jane.smith@example.com" };
+element.Afficher();
